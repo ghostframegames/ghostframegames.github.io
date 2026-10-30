@@ -23,7 +23,7 @@
 <article class="wrap policy">
 <p class="crumb"><a href="/">Ghostframe Games</a> / <a href="/afterimage/">Afterimage.io</a> / Privacy Policy</p>
 <h1>Privacy Policy &mdash; Afterimage.io</h1>
-<p><strong>Effective date:</strong> October 15, 2026<br><strong>Last updated:</strong> October 15, 2026</p>
+<p><strong>Effective date:</strong> October 15, 2026<br><strong>Last updated:</strong> October 30, 2026</p>
 <p>This Privacy Policy explains what information the mobile game <strong>Afterimage.io</strong>
 (package name <code>com.afterimage.game</code>, the &quot;<strong>App</strong>&quot;) collects, why, who it is
 shared with, and what choices you have.</p>
@@ -52,7 +52,7 @@ independent controller.</p>
 </tr>
 <tr>
 <td>Do we run our own servers?</td>
-<td><strong>No.</strong> We operate no backend, no analytics service and no database. Nothing you do in the App is sent to a server we control.</td>
+<td><strong>One, for anonymous play statistics only.</strong> If &quot;Share anonymous play stats&quot; is on (it is on by default, except in the EEA and the UK, where it starts off), the App sends a small record of how the game is played to a server we run on Cloudflare. It carries a random number made by the App, never your name or any account or advertising identifier. You can turn it off in Settings &gt; Privacy. We run no account system and store no game saves.</td>
 </tr>
 <tr>
 <td>Where does your progress live?</td>
@@ -60,7 +60,7 @@ independent controller.</p>
 </tr>
 <tr>
 <td>What leaves the device?</td>
-<td>Advertising identifier, approximate location, ad interaction data and diagnostics (to Google AdMob); your Play Games display name, player ID and submitted scores <strong>only if you sign in to Play Games</strong>; and purchase transactions processed by Google Play Billing.</td>
+<td>Advertising identifier, approximate location, ad interaction data and diagnostics (to Google AdMob); your Play Games display name, player ID and submitted scores <strong>only if you sign in to Play Games</strong>; purchase transactions processed by Google Play Billing; and, if &quot;Share anonymous play stats&quot; is on, anonymous play statistics (§ 2.7; on by default, except in the EEA and the UK, where it starts off).</td>
 </tr>
 <tr>
 <td>Do we sell your data?</td>
@@ -80,8 +80,9 @@ kinds:</p>
 <li><strong>Rewarded ads.</strong> You choose whether to watch one; they are never forced.
 Watching one multiplies the shards earned from a run.</li>
 <li><strong>Interstitial ads.</strong> A full-screen ad that can appear <strong>between runs</strong>, on a
-schedule limited by number of runs and by time. It never appears during a
-run or on launch.</li>
+schedule limited by number of runs and by time: not in your first session
+or first runs, and at most once per few minutes of play. It never appears
+during a run or on launch.</li>
 </ul>
 <p>Buying the <strong>premium unlock</strong> turns both off. With it, the App stops requesting
 ads.</p>
@@ -145,8 +146,9 @@ validation.</p>
 <p>For purchase history, refunds, subscriptions and payment disputes, Google is the
 controller — see § 6 and § 11.</p>
 <h3>2.4 Game modes and the Afterimage Online display name</h3>
-<p>The App has four modes: <strong>Classic</strong> survival, <strong>Hero</strong> mode, <strong>Arcade</strong> mode and
-<strong>Afterimage Online</strong>. All of them run entirely on your device. In particular,
+<p>The App&#39;s modes (<strong>Constellations</strong>, <strong>Endless</strong> survival, <strong>Hero</strong> mode,
+<strong>Arcade</strong> mode and <strong>Afterimage Online</strong>) all run entirely on your device; the
+only gameplay information that leaves it is the anonymous statistics in § 2.7. In particular,
 <strong>Afterimage Online is currently played against computer-controlled bots</strong>;
 there is no matchmaking, no other human player, and no network traffic for it.</p>
 <p>In Afterimage Online you may type a <strong>display name</strong>. It is shown over your own
@@ -189,6 +191,26 @@ transferred directly to a new device during device-to-device setup.</p>
 performance metrics from Android devices and shows them to us in aggregate,
 de-identified form via Android vitals. We cannot use that data to identify you.
 This is Google&#39;s platform-level processing under its own privacy policy.</p>
+<h3>2.7 Anonymous play statistics</h3>
+<p>To find out which parts of the game are confusing, too hard or not fun, the App sends us
+anonymous play statistics: when a session starts and how long it lasts; for each run, the
+mode, how long it lasted, what ended it and the score; whether you then chose to play
+again or go back to the menu; how far you got through the first lesson and which tips
+appeared; how long it took to start steering; which ads were shown and whether an
+optional rewarded ad was watched; your sound, joystick, orientation and tutorial
+settings when they change; and the App version.</p>
+<p>These records carry a random number that the App generates on your phone. It is not your
+advertising identifier, your Google or Play Games account, or anything else that
+identifies you or your device, and we do not collect your name or anything you type.
+Your IP address, and the device model and Android version that your phone&#39;s web
+component names in every request it makes, necessarily reach our hosting provider,
+Cloudflare, when the App sends the data; we do not record or store either.</p>
+<p>This is on by default, except in the European Economic Area and the United Kingdom, where
+it starts off and is sent only if you turn it on. You can change it at any time in
+Settings &gt; Privacy &gt; &quot;Share anonymous play stats&quot;.
+Turning it off deletes the random number and any statistics not yet sent from your phone,
+and nothing further is collected. Because the statistics are not linked to you, we cannot
+look up or separate the records already sent from a particular phone.</p>
 <hr>
 <h2>3. Information the App does <strong>not</strong> collect</h2>
 <p>To be explicit, the App does not collect, request, or hold:</p>
@@ -271,6 +293,11 @@ generates for internal broadcast receivers; it grants no access to your data.</p
 <td>Performance of a contract (Art. 6(1)(b))</td>
 </tr>
 <tr>
+<td>Improving the game (anonymous play statistics)</td>
+<td>Random install number, gameplay and settings events (§ 2.7)</td>
+<td>Legitimate interests in understanding how the game is played and fixing what does not work (Art. 6(1)(f))</td>
+</tr>
+<tr>
 <td>Meeting legal, tax and policy obligations</td>
 <td>Transaction records held by Google</td>
 <td>Legal obligation (Art. 6(1)(c))</td>
@@ -315,9 +342,13 @@ effects, and we make no automated decisions about you.</p>
 <td>Support correspondence you send us</td>
 <td>Deleted no later than 24 months after the matter is closed.</td>
 </tr>
+<tr>
+<td>Anonymous play statistics</td>
+<td>Deleted automatically 13 months after they are recorded.</td>
+</tr>
 </tbody></table>
-<p>Because we operate no servers, there is no account or profile held by us to
-expire, and no dataset of ours that could be breached.</p>
+<p>Apart from anonymous play statistics (§ 2.7), we operate no servers and hold no account
+or profile that could expire or be breached.</p>
 <hr>
 <h2>6. Third parties</h2>
 <p>The App shares data with the following services. Each acts under its own
@@ -357,7 +388,9 @@ own purposes.</p>
 <td>Privacy policy: <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a></td>
 </tr>
 </tbody></table>
-<p>There are no other SDKs, no analytics providers, no attribution or measurement
+<p><strong>Cloudflare, Inc.</strong> hosts the anonymous play statistics (§ 2.7) as our service provider
+and processes them only on our instructions. <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">https://www.cloudflare.com/privacypolicy/</a></p>
+<p>There are no other SDKs, no third-party analytics providers, no attribution or measurement
 partners, no social login, and no ad mediation networks beyond AdMob in this
 build.</p>
 <p>We do not sell personal information, and we do not disclose it to data brokers.
@@ -372,6 +405,9 @@ EEA, Google relies on the <strong>European Commission&#39;s Standard Contractual
 Clauses</strong>, the <strong>UK International Data Transfer Addendum</strong>, and the <strong>EU-US Data
 Privacy Framework</strong> where applicable. Details are in Google&#39;s privacy policy and
 its data-transfer documentation.</p>
+<p>Anonymous play statistics are processed on Cloudflare&#39;s global network, including in
+the United States, under Cloudflare&#39;s Data Processing Addendum and its Standard
+Contractual Clauses.</p>
 <hr>
 <h2>8. Children&#39;s privacy (COPPA and the Play Families policy)</h2>
 <p><strong>Afterimage.io is not directed to children under 13.</strong> In Play Console its
@@ -384,8 +420,9 @@ under the applicable age of digital consent in your country, which is 13 to 16
 across the EEA). If you believe a child has provided personal information
 through the App, contact us at <strong><a href="mailto:svenvike@gmail.com">svenvike@gmail.com</a></strong> and we will act on it
 promptly — in practice that means telling you how to clear the App&#39;s local
-storage and how to delete any Play Games profile data, since we hold no
-server-side records of our own to erase.</p>
+storage and how to delete any Play Games profile data. The only server-side
+records of our own are the anonymous play statistics (§ 2.7), which identify no
+one and are deleted after 13 months.</p>
 <p>Parents and guardians can use <strong>Google Family Link</strong> and Play Store parental
 controls to restrict installs and in-app purchases.</p>
 <hr>
@@ -459,6 +496,13 @@ information involved were:</p>
 <td>Yes, in the same sense as above</td>
 </tr>
 <tr>
+<td>Internet or network activity (anonymous play statistics, § 2.7)</td>
+<td>Yes, unless you turn it off</td>
+<td>Yes — to Cloudflare, our service provider</td>
+<td><strong>No</strong></td>
+<td><strong>No</strong></td>
+</tr>
+<tr>
 <td>Geolocation</td>
 <td>Approximate, IP-derived country/region only. No precise location.</td>
 <td>Yes — to Google</td>
@@ -518,6 +562,10 @@ routes above. You may use an authorised agent.</p>
 <td>Any email you have sent us</td>
 <td>Email <strong><a href="mailto:svenvike@gmail.com">svenvike@gmail.com</a></strong> and ask; we will delete the correspondence.</td>
 </tr>
+<tr>
+<td>Anonymous play statistics</td>
+<td>Turning off <strong>Settings → Privacy → Share anonymous play stats</strong>, or clearing the App&#39;s storage, deletes the random number from your phone; statistics already sent are deleted after 13 months.</td>
+</tr>
 </tbody></table>
 <p>We hold no server-side copy of your progress. If Android backup was off,
 <strong>uninstalling the App permanently destroys your save</strong>. If it was on, Android
@@ -526,10 +574,12 @@ be restored from Google Play either way.</p>
 <hr>
 <h2>11. Security</h2>
 <p>The App transmits everything that leaves the device over <strong>encrypted HTTPS/TLS
-connections</strong>, using the Google SDKs&#39; own transport. Local save data is held in
+connections</strong>, using the Google SDKs&#39; own transport and, for anonymous play
+statistics, HTTPS only. Local save data is held in
 the Android application sandbox, which the operating system isolates from other
-apps. We do not operate servers, databases or an administrative backend, which
-removes the largest category of breach risk outright.</p>
+apps. Our only server is the anonymous play statistics store (§ 2.7), which holds
+no names, accounts, advertising identifiers or game saves, and whose reports are
+reachable only with an administrator key.</p>
 <p>No method of transmission or storage is completely secure. If we ever become
 aware of a breach affecting personal data for which we are the controller, we
 will notify the relevant supervisory authority and affected users as required by
@@ -542,7 +592,7 @@ changes — a new SDK, a new category of collected data, a new third party, or
 real-player online matches — will be announced in the App&#39;s release notes and,
 where the law requires it, we will ask for your consent again before the change
 takes effect. The current version is always available at <strong><a href="https://ghostframegames.github.io/afterimage/privacy/" rel="noopener">https://ghostframegames.github.io/afterimage/privacy/</a></strong>
-and from Settings → About → Privacy policy inside the App.</p>
+and from Settings → Privacy → Privacy policy inside the App.</p>
 <hr>
 <h2>13. Contact</h2>
 <table>
